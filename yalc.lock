@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "typeorm": {
+      "signature": "b8057e82aa86b4fe0a17c4f7aa4df7bf",
+      "file": true,
+      "replaced": "^0.2.13"
+    }
+  }
+}
