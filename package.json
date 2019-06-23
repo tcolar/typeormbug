@@ -11,7 +11,7 @@
     "install-peers": "^1.0.3",
     "pg": "^7.4.1",
     "pg-pool": "^2.0.6",
-    "typeorm": "file:.yalc/typeorm"
+    "typeorm": "^0.2.18"
   },
   "devDependencies": {
     "@types/pg": "7.4.14",
