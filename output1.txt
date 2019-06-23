@@ -1,0 +1,52 @@
+➜  ormtest yarn start                     
+yarn run v1.15.2
+warning package.json: No license field
+$ yarn install && tsc && node ./dist/test.js
+warning package.json: No license field
+warning ormtest@1.0.0: No license field
+[1/4] 🔍  Resolving packages...
+success Already up-to-date.
+query: select 1
+1
+query: select 1
+1
+query: select 1
+1
+query: select 1
+1
+query: select 1
+1
+query: select 1
+1
+
+----- Killed the DB process here --------
+
+
+(node:45506) UnhandledPromiseRejectionWarning: Error: connect ECONNREFUSED 127.0.0.1:13990
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1054:14)
+From previous event:
+    at PostgresDriver.obtainMasterConnection (/Users/tcolar/code/convoy/ormtest/node_modules/typeorm/driver/postgres/PostgresDriver.js:716:16)
+    at PostgresQueryRunner.connect (/Users/tcolar/code/convoy/ormtest/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:61:58)
+    at PostgresQueryRunner.<anonymous> (/Users/tcolar/code/convoy/ormtest/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:162:51)
+    at step (/Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:136:27)
+    at Object.next (/Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:117:57)
+    at /Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:110:75
+From previous event:
+    at Object.__awaiter (/Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:106:16)
+    at /Users/tcolar/code/convoy/ormtest/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:155:65
+From previous event:
+    at PostgresQueryRunner.query (/Users/tcolar/code/convoy/ormtest/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:155:16)
+    at Connection.<anonymous> (/Users/tcolar/code/convoy/ormtest/node_modules/typeorm/connection/Connection.js:395:62)
+    at step (/Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:136:27)
+    at Object.next (/Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:117:57)
+    at /Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:110:75
+From previous event:
+    at Object.__awaiter (/Users/tcolar/code/convoy/ormtest/node_modules/tslib/tslib.js:106:16)
+    at Connection.query (/Users/tcolar/code/convoy/ormtest/node_modules/typeorm/connection/Connection.js:382:24)
+    at /Users/tcolar/code/convoy/ormtest/dist/test.js:57:55
+    at step (/Users/tcolar/code/convoy/ormtest/dist/test.js:32:23)
+    at Object.next (/Users/tcolar/code/convoy/ormtest/dist/test.js:13:53)
+    at fulfilled (/Users/tcolar/code/convoy/ormtest/dist/test.js:4:58)
+(node:45506) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:45506) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+✨  Done in 22.32s.
