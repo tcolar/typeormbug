@@ -3,10 +3,10 @@ module.exports = (async () => {
     type: 'postgres',
     logging: true,
     application_name: `test`,
-    database: 'foo',
+    database: 'work_queue_dev',
     username: 'donvoy',
     password: '',
     host: '127.0.0.1',
-    port: 13990,
+    port: 5499,
   };
 })();

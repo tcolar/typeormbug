@@ -2,13 +2,16 @@
   "name": "ormtest",
   "version": "1.0.0",
   "scripts": {
-    "start": "yarn install && tsc && node ./dist/test.js"
+    "orm": "yarn install && tsc && node ./dist/typeorm.js",
+    "pool": "yarn install && tsc && node ./dist/pgpool.js"
   },
   "dependencies": {
+    "@types/pg-pool": "^0.0.3",
     "bluebird": "^3.5.5",
     "install-peers": "^1.0.3",
     "pg": "^7.4.1",
-    "typeorm": "^0.2.13"
+    "pg-pool": "^2.0.6",
+    "typeorm": "file:.yalc/typeorm"
   },
   "devDependencies": {
     "@types/pg": "7.4.14",
