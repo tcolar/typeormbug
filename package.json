@@ -1,0 +1,18 @@
+{
+  "name": "ormtest",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "yarn install && tsc && node ./dist/test.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "install-peers": "^1.0.3",
+    "pg": "^7.4.1",
+    "typeorm": "^0.2.13"
+  },
+  "devDependencies": {
+    "@types/pg": "7.4.14",
+    "ts-node": "^7.0.1",
+    "typescript": "~3.4.0"
+  }
+}
